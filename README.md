@@ -9,7 +9,7 @@ in the authorship record.
 Repository: [wang060919/jsp-000936-unit-circle-lean](https://github.com/wang060919/jsp-000936-unit-circle-lean).
 [GitHub Actions](https://github.com/wang060919/jsp-000936-unit-circle-lean/actions/workflows/verify.yml) checks the published
 version. The [scope inquiry](https://github.com/TheJustinSunPrize/awards/issues/5007)
-is pending; no official awards contribution PR or claim has been submitted.
+is pending. The [official contribution PR #5009](https://github.com/TheJustinSunPrize/awards/pull/5009) is open for scope and proof review; no award claim has been submitted.
 
 An independent Lean 4 project for the unit-circle variant of Erdős problem 1129,
 associated with JSP-000936. The mathematical result is due to Brutman and
@@ -223,4 +223,4 @@ is in `.work/logs/`. The final verification report and packaged evidence are in
 review is in `verification/RELEASE-REVIEW.md`. These are dated local snapshots;
 public version and CI references are in `verification/PUBLICATION.md`. Submission preparation is
 documented in `SUBMISSION.md`.
-No PR has been submitted.
+The [official contribution PR #5009](https://github.com/TheJustinSunPrize/awards/pull/5009) submits the unit-circle formalization for maintainer review. Scope acceptance remains pending.

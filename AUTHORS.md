@@ -43,5 +43,4 @@ contributions. The new unit-circle code does not transfer their authorship to
 Public project identity and repository ownership do not establish award
 eligibility, author recognition, priority, or entitlement. Whether this
 unit-circle variant and its AI-assisted formalization qualify for an award is
-for the organizers to determine. No awards PR or claim has been submitted as
-part of this work.
+for the organizers to determine. The [official contribution PR #5009](https://github.com/TheJustinSunPrize/awards/pull/5009) submits the disclosed contribution for review. No award claim has been submitted.

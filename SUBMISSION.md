@@ -104,10 +104,12 @@ project's compiled artifacts; it reused the pinned external dependency cache.
 
 ## Publication fields
 
-The original proof repository is public. No official awards contribution PR or
-claim has been submitted. Before submitting the contribution, `wang060919` must
-supply the full 40-character verified commit SHA and reproduction evidence for
-that version. Public version and CI references are in `verification/PUBLICATION.md`.
+The original proof repository is public. The [official contribution PR #5009](https://github.com/TheJustinSunPrize/awards/pull/5009) submits
+commit `e99c4a7fb868a264e08e79355c44adf73e4fc332`, contained in `main`, with
+[successful CI run 38158599411](https://github.com/wang060919/jsp-000936-unit-circle-lean/actions/runs/38158599411)
+and the reproduction evidence for that exact version. Scope and proof review
+remain pending; no award claim has been submitted. Public version and CI
+references are in `verification/PUBLICATION.md`.
 The public author identity is `wang060919`, with the accurate contribution
 record in `AUTHORS.md`; repository ownership alone does not determine award
 attribution. The selected commit must be contained in `main`. A local SHA256 source manifest does not replace those publication

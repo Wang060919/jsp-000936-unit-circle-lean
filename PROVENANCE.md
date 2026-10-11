@@ -103,5 +103,4 @@ Those checks establish local formal verification, not external authorship
 recognition or award acceptance. A local source SHA256 manifest does not
 replace the public repository, branch, and full Git commit SHA required for
 formalization review. Public version and workflow references are in
-[verification/PUBLICATION.md](verification/PUBLICATION.md). No official awards
-contribution PR or claim has been submitted.
+[verification/PUBLICATION.md](verification/PUBLICATION.md). The [official contribution PR #5009](https://github.com/TheJustinSunPrize/awards/pull/5009) is open for review; no award claim has been submitted.

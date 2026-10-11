@@ -5,6 +5,14 @@ Public repository created on **2026-10-12 (Asia/Shanghai)**:
 [wang060919/jsp-000936-unit-circle-lean](https://github.com/wang060919/jsp-000936-unit-circle-lean).
 Branch: `main`.
 
+The proof version submitted to official PR #5009 is
+`e99c4a7fb868a264e08e79355c44adf73e4fc332`, contained in `main`.
+[GitHub Actions run 38158599411](https://github.com/wang060919/jsp-000936-unit-circle-lean/actions/runs/38158599411)
+completed successfully on 2026-10-12 (Asia/Shanghai) for this exact `head_sha`.
+The complete project build, 771 public proofs and five literal-statement checks,
+fresh Lean kernel replay, and 114-file release manifest all passed.
+Later documentation commits do not change the version selected in that PR.
+
 ## Select the verified public version
 
 Use a full 40-character SHA from the [main commit history](https://github.com/wang060919/jsp-000936-unit-circle-lean/commits/main/).
@@ -29,10 +37,13 @@ The 2026-10-11 [local verification report](REPORT.md) and
 
 The public [scope question #5007](https://github.com/TheJustinSunPrize/awards/issues/5007)
 asks whether the complete unit-circle result can be reviewed separately or
-jointly with a separately attributed real-interval proof. No official awards
-contribution PR or claim has been submitted. Publishing this proof repository
-and running CI do not determine scope acceptance, authorship eligibility,
-formalization priority or an award.
+jointly with a separately attributed real-interval proof. The [official contribution PR #5009](https://github.com/TheJustinSunPrize/awards/pull/5009)
+was opened on 2026-10-12 (Asia/Shanghai) with the complete unit-circle proof and
+publication evidence; it explicitly requests scope and statement review.
+Scope acceptance and organizer verification remain pending. No award claim
+has been submitted. Publishing the repository, passing CI and opening a PR do
+not determine scope acceptance, authorship eligibility, formalization priority
+or an award.
 
 See [AUTHORS.md](../AUTHORS.md) for the actual development workflow and
 [PROVENANCE.md](../PROVENANCE.md) for third-party code and historical mathematics.
