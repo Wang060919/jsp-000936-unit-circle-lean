@@ -1,0 +1,45 @@
+{
+  "public_author": "wang060919",
+  "repository_planned": "wang060919/jsp-000936-unit-circle-lean",
+  "started_at_utc": "2026-10-11T06:56:25.516244+00:00",
+  "commands": [
+    {
+      "name": "audit",
+      "argv": [
+        "timeout",
+        "--kill-after=30s",
+        "900s",
+        "python3",
+        "scripts/audit.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 99.522,
+      "raw_log": "release-audit-run.log",
+      "raw_log_sha256": "0efa0d2d13dbae35acfd6e095c37e7d9544caa6563d7517b13ce338d0fdb4c7b"
+    },
+    {
+      "name": "fresh_kernel",
+      "argv": [
+        "timeout",
+        "--kill-after=30s",
+        "600s",
+        "scripts/lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "-v",
+        "UnitCircleInterpolation.FinalClassification"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 265.318,
+      "raw_log": "release-kernel-fresh.log",
+      "raw_log_sha256": "7358a9f97177e06f9720c66bfd3d0f80cbb2d4fffd5d87f9d7f14b84d76611b8"
+    }
+  ],
+  "github_actions_executed": false,
+  "push_performed": false,
+  "awards_pr_created": false,
+  "finished_at_utc": "2026-10-11T07:02:30.359074+00:00",
+  "success": true,
+  "source_audit_sha256": "47126a03e826a8d946c37eab2b14d8b27e45d6e37c9bf0ab79924272a923ed64"
+}

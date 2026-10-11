@@ -1,0 +1,9 @@
+{
+  "public_author": "wang060919",
+  "manifest_valid_case_passed": true,
+  "unlisted_file_rejected": true,
+  "changed_content_rejected": true,
+  "lake_lean_mismatch_rejected": true,
+  "test_directory": "/tmp/unit-circle-release-guard-olrxn60g",
+  "scope": "Temporary regression probes for real prepublication bugs; no project mathematical source changed."
+}

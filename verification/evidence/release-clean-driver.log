@@ -1,0 +1,5 @@
+cwd=/tmp/unit-circle-release-clean-7ostjpof
+PATH=/home/wang/Projects/justin-sun-prize/unit-circle-interpolation/.tools/lean-4.33.0-linux/bin:/usr/bin:/bin
+No .tools and no project build cache at start. Only fixed dependency packages are shared.
+Build passed; 771 public theorems audited with only standard axioms.
+The complete all-positive-N Target was type-checked using UnitCircleInterpolation.unitCircleInterpolation_target.

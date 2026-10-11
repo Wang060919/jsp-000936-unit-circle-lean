@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Copyright (c) 2026 wang060919. Released under the MIT license.
+set -euo pipefail
+task_project_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+task_toolchain_dir="$task_project_dir/.tools/lean-4.33.0-linux"
+cd -- "$task_project_dir"
+if [[ -x "$task_toolchain_dir/bin/lake" ]]; then
+  export PATH="$task_toolchain_dir/bin:$PATH"
+fi
+if ! command -v lake >/dev/null || ! command -v lean >/dev/null; then
+  printf '%s\n' 'Install the toolchain specified in lean-toolchain with Elan, or provide the project-local Lean 4.33.0 toolchain.' >&2
+  exit 1
+fi
+task_lean_version="$(lean --version)"
+if [[ "$task_lean_version" != 'Lean (version 4.33.0, '* || "$task_lean_version" != *'commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)' ]]; then
+  printf 'Expected Lean 4.33.0; observed %s\n' "$task_lean_version" >&2
+  exit 1
+fi
+task_lake_version="$(lake --version)"
+if [[ "$task_lake_version" != *'(Lean version 4.33.0)'* ]]; then
+  printf 'Expected Lake for Lean 4.33.0; observed %s\n' "$task_lake_version" >&2
+  exit 1
+fi
+export LEAN_NUM_THREADS=1
+mkdir -p -- "$task_project_dir/.work"
+exec 9>"$task_project_dir/.work/lake.lock"
+flock 9
+exec lake "$@"

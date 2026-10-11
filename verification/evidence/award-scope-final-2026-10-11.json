@@ -1,0 +1,872 @@
+{
+  "schema_version": 1,
+  "audit_date_local": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "completed_at_utc": "2026-10-10 18:37:29 UTC",
+  "completed_at_utc_iso": "2026-10-10T18:37:29Z",
+  "completed_at_asia_shanghai": "2026-10-11T02:37:29.000+08:00",
+  "purpose": "Bounded live award-scope refresh after the local all-positive-N unit-circle theorem compiled. This report does not assert organizer acceptance, an award, exclusivity, or formalization priority.",
+  "method": {
+    "primary_sources": [
+      "Official GitHub catalog and PR APIs",
+      "Official participation page",
+      "Pinned current source blobs in external repositories"
+    ],
+    "external_operations": "read-only",
+    "local_writes": "only .work/logs/award-scope-final-2026-10-11.json",
+    "source_review": "Static current-source scope inspection; no competitor Lean rebuild or independent kernel replay."
+  },
+  "official_catalog": {
+    "retrieved_at_utc": "2026-10-10T18:33:28.280877+00:00",
+    "main_commit": "16877004910734cecca83cc5af0fec2f5a4125b3",
+    "commit_date": "2026-10-08T10:25:49Z",
+    "commit_url": "https://github.com/TheJustinSunPrize/awards/commit/16877004910734cecca83cc5af0fec2f5a4125b3",
+    "catalog_url": "https://github.com/TheJustinSunPrize/awards/blob/16877004910734cecca83cc5af0fec2f5a4125b3/problems/catalog-0901-1000.md#JSP-000936",
+    "catalog_blob_sha": "2937496bd6501290b6189e206b197a811309227c",
+    "entry_start_line": 618,
+    "fields": {
+      "id": "JSP-000936",
+      "title": "Which Lagrange interpolation nodes minimize the maximum amplification of input errors?",
+      "current_status": "Solved",
+      "lean_proof": "No",
+      "eligible_to_claim": "No"
+    },
+    "unit_circle_bibliography": {
+      "included": true,
+      "reference": "L. Brutman and A. Pinkus, On the Erdös Conjecture Concerning Minimal Norm Interpolation on the Unit Circle, SIAM J. Numer. Anal. (1980), 373–375",
+      "doi_url": "https://doi.org/10.1137/0717031"
+    }
+  },
+  "participation_rules": {
+    "url": "https://www.hejustinsun.com/prize/participation",
+    "http_status": 200,
+    "retrieved_at_utc": "2026-10-10T18:34:18.140399+00:00",
+    "body_sha256": "f65ae5f83b85cb9f9fb0d7bdd7fdf8f8ef10e9471152effaeeacef126dc4b429",
+    "claims_verified": {
+      "complete_original_problem_only": "原问题的完整解答和完整 Lean 证明才可提交；小情形、中间引理、弱化结论和依靠额外未证假设的条件结果不满足要求。",
+      "proof_hygiene": "Lean 证明不能用 sorry、admit 或新增未证假设补上缺失步骤。",
+      "proof_submission": "Lean 证明须在贡献者自己的外部仓库；给出分支、完整40字符提交SHA、该提交的证明路径和完整目标定理名。",
+      "statement_and_reproduction": "说明定义、假设、量词、结论和各分支与原题的对应；给出 Lean 与锁定依赖、干净构建命令和公理审计。",
+      "review_order": "主办方先确认数学解答并登记数学解答候选，再验证 Lean 形式化；编译成功不替代这些步骤，数学来源可由公开文献确认。",
+      "eligible_no": "目录中的 No 表示尚无通过验证的提交，并不阻止参与或提交。",
+      "optional_self_check": "lean-verify 预检是可选的；最终接受取决于主办方独立核对。",
+      "priority": "提交时间戳须有独立可核对的公开历史支持；PR开启日期和单个自行设置的提交时间戳不能确立完成优先权。",
+      "not_award": "提交、审核受理和合并PR均不是获奖决定。"
+    }
+  },
+  "pull_request_searches": [
+    {
+      "query": "repo:TheJustinSunPrize/awards \"JSP-000936\" is:pr",
+      "retrieved_at_utc": "2026-10-10T18:33:51.327082+00:00",
+      "total_count": 9,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 4987,
+          "title": "Formalize JSP-000936 (Erdős Problem #1128 / #1129 · Optimal Lagrange Interpolation Nodes)",
+          "state": "open",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/4987",
+          "updated_at": "2026-10-10T16:13:25Z",
+          "merged_at": null,
+          "body_length": 786,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 4153,
+          "title": "JSP-000936: register Lean formalization (plby/lean-proofs)",
+          "state": "open",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/4153",
+          "updated_at": "2026-09-24T03:52:13Z",
+          "merged_at": null,
+          "body_length": 6923,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 764,
+          "title": "JSP-000936: catalog Lean evidence and formalization attribution",
+          "state": "open",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/764",
+          "updated_at": "2026-09-23T11:06:19Z",
+          "merged_at": null,
+          "body_length": 6959,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 1404,
+          "title": "JSP-000936: record existing Lean formalization (plby/lean-proofs)",
+          "state": "open",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/1404",
+          "updated_at": "2026-09-18T18:57:10Z",
+          "merged_at": null,
+          "body_length": 1649,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 2997,
+          "title": "JSP-000936: register Lean formalization",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/2997",
+          "updated_at": "2026-09-23T04:16:28Z",
+          "merged_at": null,
+          "body_length": 1803,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 1639,
+          "title": "catalog: record Lean formalization for JSP-000936",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/1639",
+          "updated_at": "2026-10-06T17:00:08Z",
+          "merged_at": null,
+          "body_length": 2457,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 2035,
+          "title": "catalog: record Lean formalization for JSP-000936",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/2035",
+          "updated_at": "2026-09-22T03:02:03Z",
+          "merged_at": null,
+          "body_length": 2969,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 121,
+          "title": "Formalize JSP-000936: complete free-node minimizer characterization",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/121",
+          "updated_at": "2026-09-22T08:44:52Z",
+          "merged_at": null,
+          "body_length": 4462,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 144,
+          "title": "JSP-000936, JSP-000937, JSP-000958: migrate existing submission to catalog-only Lean references",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/144",
+          "updated_at": "2026-09-23T11:06:24Z",
+          "merged_at": null,
+          "body_length": 24189,
+          "circle_complex_excerpts": [
+            "- Definitions, assumptions, quantifiers, cases and result: The real-interval minimization question: existence and classification of every minimizer among all distinct real nodes in [-1,1], with arbitrary enumeration and free extreme nodes. It covers one node and every n=d+2. Minimizers are positive affine copies of an internally equioscillating reference with both exterior endpoint values at most the optimum. Only the reference is normalized; com"
+          ]
+        }
+      ],
+      "query_api_url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20%22JSP-000936%22%20is%3Apr&per_page=100"
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards \"1129\" is:pr",
+      "retrieved_at_utc": "2026-10-10T18:33:51.322248+00:00",
+      "total_count": 9,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 1129,
+          "title": "JSP-000388: Polynomial value set with additive complement — verification",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/1129",
+          "updated_at": "2026-09-21T13:14:00Z",
+          "merged_at": null,
+          "body_length": 846,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 4987,
+          "title": "Formalize JSP-000936 (Erdős Problem #1128 / #1129 · Optimal Lagrange Interpolation Nodes)",
+          "state": "open",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/4987",
+          "updated_at": "2026-10-10T16:13:25Z",
+          "merged_at": null,
+          "body_length": 786,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 4988,
+          "title": "Formalize JSP-000937 (Erdős Problem #1129 / #1130 · Optimal Peak Lebesgue Interpolation Nodes)",
+          "state": "open",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/4988",
+          "updated_at": "2026-10-10T16:20:03Z",
+          "merged_at": null,
+          "body_length": 893,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 4153,
+          "title": "JSP-000936: register Lean formalization (plby/lean-proofs)",
+          "state": "open",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/4153",
+          "updated_at": "2026-09-24T03:52:13Z",
+          "merged_at": null,
+          "body_length": 6923,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 1639,
+          "title": "catalog: record Lean formalization for JSP-000936",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/1639",
+          "updated_at": "2026-10-06T17:00:08Z",
+          "merged_at": null,
+          "body_length": 2457,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 764,
+          "title": "JSP-000936: catalog Lean evidence and formalization attribution",
+          "state": "open",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/764",
+          "updated_at": "2026-09-23T11:06:19Z",
+          "merged_at": null,
+          "body_length": 6959,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 343,
+          "title": "JSP-000388: complete polynomial tiling with disclosed obstruction and translation contributions",
+          "state": "open",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/343",
+          "updated_at": "2026-09-20T13:36:14Z",
+          "merged_at": null,
+          "body_length": 21632,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 121,
+          "title": "Formalize JSP-000936: complete free-node minimizer characterization",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/121",
+          "updated_at": "2026-09-22T08:44:52Z",
+          "merged_at": null,
+          "body_length": 4462,
+          "circle_complex_excerpts": []
+        },
+        {
+          "number": 144,
+          "title": "JSP-000936, JSP-000937, JSP-000958: migrate existing submission to catalog-only Lean references",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/144",
+          "updated_at": "2026-09-23T11:06:24Z",
+          "merged_at": null,
+          "body_length": 24189,
+          "circle_complex_excerpts": [
+            "- Definitions, assumptions, quantifiers, cases and result: The real-interval minimization question: existence and classification of every minimizer among all distinct real nodes in [-1,1], with arbitrary enumeration and free extreme nodes. It covers one node and every n=d+2. Minimizers are positive affine copies of an internally equioscillating reference with both exterior endpoint values at most the optimum. Only the reference is normalized; com"
+          ]
+        }
+      ],
+      "query_api_url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20%221129%22%20is%3Apr&per_page=100"
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards \"JSP-000936\" \"circle\" is:pr",
+      "retrieved_at_utc": "2026-10-10T18:33:51.177328+00:00",
+      "total_count": 1,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 144,
+          "title": "JSP-000936, JSP-000937, JSP-000958: migrate existing submission to catalog-only Lean references",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/144",
+          "updated_at": "2026-09-23T11:06:24Z",
+          "merged_at": null,
+          "body_length": 24189,
+          "circle_complex_excerpts": [
+            "- Definitions, assumptions, quantifiers, cases and result: The real-interval minimization question: existence and classification of every minimizer among all distinct real nodes in [-1,1], with arbitrary enumeration and free extreme nodes. It covers one node and every n=d+2. Minimizers are positive affine copies of an internally equioscillating reference with both exterior endpoint values at most the optimum. Only the reference is normalized; com"
+          ]
+        }
+      ],
+      "query_api_url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20%22JSP-000936%22%20%22circle%22%20is%3Apr&per_page=100"
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards \"JSP-000936\" \"complex\" is:pr",
+      "retrieved_at_utc": "2026-10-10T18:33:51.228142+00:00",
+      "total_count": 1,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 144,
+          "title": "JSP-000936, JSP-000937, JSP-000958: migrate existing submission to catalog-only Lean references",
+          "state": "closed",
+          "html_url": "https://github.com/TheJustinSunPrize/awards/pull/144",
+          "updated_at": "2026-09-23T11:06:24Z",
+          "merged_at": null,
+          "body_length": 24189,
+          "circle_complex_excerpts": [
+            "- Definitions, assumptions, quantifiers, cases and result: The real-interval minimization question: existence and classification of every minimizer among all distinct real nodes in [-1,1], with arbitrary enumeration and free extreme nodes. It covers one node and every n=d+2. Minimizers are positive affine copies of an internally equioscillating reference with both exterior endpoint values at most the optimum. Only the reference is normalized; com"
+          ]
+        }
+      ],
+      "query_api_url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20%22JSP-000936%22%20%22complex%22%20is%3Apr&per_page=100"
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards \"circle\" \"interpolation\" is:pr",
+      "retrieved_at_utc": "2026-10-10T18:36:26.400412+00:00",
+      "total_count": 2,
+      "incomplete_results": false,
+      "items": [
+        {
+          "number": 4612,
+          "title": "Solve JSP-000698: complete mathematical solution (cycle-plus-triangles graphs are 3-colorable)",
+          "state": "open",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/4612",
+          "updated_at": "2026-09-29T07:10:00Z"
+        },
+        {
+          "number": 144,
+          "title": "JSP-000936, JSP-000937, JSP-000958: migrate existing submission to catalog-only Lean references",
+          "state": "closed",
+          "url": "https://github.com/TheJustinSunPrize/awards/pull/144",
+          "updated_at": "2026-09-23T11:06:24Z"
+        }
+      ],
+      "query_api_url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20%22circle%22%20%22interpolation%22%20is%3Apr&per_page=100"
+    },
+    {
+      "query": "repo:TheJustinSunPrize/awards \"Brutman\" is:pr",
+      "retrieved_at_utc": "2026-10-10T18:36:26.071616+00:00",
+      "total_count": 0,
+      "incomplete_results": false,
+      "items": [],
+      "query_api_url": "https://api.github.com/search/issues?q=repo%3ATheJustinSunPrize%2Fawards%20%22Brutman%22%20is%3Apr&per_page=100"
+    }
+  ],
+  "latest_related_pr": {
+    "number": 4987,
+    "pr_url": "https://github.com/TheJustinSunPrize/awards/pull/4987",
+    "snapshot": {
+      "number": 4987,
+      "state": "open",
+      "merged": false,
+      "merged_at": null,
+      "closed_at": null,
+      "updated_at": "2026-10-10T16:13:25Z",
+      "html_url": "https://github.com/TheJustinSunPrize/awards/pull/4987",
+      "body": "### Summary\n\nThis PR updates the catalog for JSP-000936 (Erdős Problem #1128 / #1129: Which Lagrange interpolation nodes minimize the maximum amplification of input errors?) to indicate that a formal proof in Lean 4 has been completed.\n\n- Standalone formalization & DefEq bridge repository: https://github.com/Drag0ndddd1118/jsp-000936-formalization\n- Mathematical resolution: Resolved by Carl de Boor and Allan Pinkus (1978), confirming Bernstein and Erdős's conjectures regarding the existence and non-uniqueness of optimal node systems.\n- Axioms: Standard Lean foundation `[propext, Classical.choice, Quot.sound]` (0 custom axioms, 0 sorry, 0 admit)\n- Verification: Complete GitHub Actions CI green & automated double-checked with `check.py`\n\nLinks to prior catalog submissions: none",
+      "head": "00a1417d587f9d13a6c5091302f942aabfc510fb",
+      "base": "16877004910734cecca83cc5af0fec2f5a4125b3"
+    },
+    "retrieved_at_utc": "2026-10-10T18:34:18.090094+00:00",
+    "changed_files": [
+      {
+        "filename": "problems/catalog-0901-1000.md",
+        "status": "modified",
+        "blob_sha": "7c8e42fcb463a0c9aaa07b76b163eca7db4f10f6",
+        "blob_url": "https://github.com/TheJustinSunPrize/awards/blob/00a1417d587f9d13a6c5091302f942aabfc510fb/problems%2Fcatalog-0901-1000.md"
+      }
+    ],
+    "external_repository": "Drag0ndddd1118/jsp-000936-formalization",
+    "current_main": {
+      "sha": "a9afe1737bb9b786f0f42d0851a3c249ddfcb64b",
+      "commit_date": "2026-10-10T16:10:09Z",
+      "message": "feat: standardize Lean formalization with Challenge, Submission, and check.py for JSP-000936",
+      "html_url": "https://github.com/Drag0ndddd1118/jsp-000936-formalization/commit/a9afe1737bb9b786f0f42d0851a3c249ddfcb64b"
+    },
+    "source_review": {
+      "retrieved_at_utc": "2026-10-10T18:35:35.914681+00:00",
+      "complete_tree_truncated": false,
+      "scope": "仍是三节点实区间结果；新增 Challenge/Submission 包装没有把证明扩展到单位圆或全部节点数。",
+      "challenge": {
+        "url": "https://github.com/Drag0ndddd1118/jsp-000936-formalization/blob/a9afe1737bb9b786f0f42d0851a3c249ddfcb64b/Challenge.lean#L15",
+        "blob_sha": "9ae02b0192eb9e88633d5c747348b04642758128",
+        "sha256": "9b0312d9b945b43a191ee507cf15fd60ec63b00188661b522fdbb29a7eb3edd5",
+        "lines": [
+          15,
+          19
+        ],
+        "statement_summary": "Two distinct explicit three-real-node configurations both attain Lebesgue constant 5/4 and are globally optimal among three-real-node configurations."
+      },
+      "submission": {
+        "url": "https://github.com/Drag0ndddd1118/jsp-000936-formalization/blob/a9afe1737bb9b786f0f42d0851a3c249ddfcb64b/Submission.lean#L8",
+        "blob_sha": "7a81921d1bbce4e4badfe6f65cecfe41fb4739b1",
+        "lines": [
+          8,
+          9
+        ],
+        "proof": "JSP000936.jsp_000936_solved : jsp000936Statement := Erdos1129.erdos_1129"
+      },
+      "core": {
+        "url": "https://github.com/Drag0ndddd1118/jsp-000936-formalization/blob/a9afe1737bb9b786f0f42d0851a3c249ddfcb64b/ErdosProblems/Erdos1129.lean",
+        "blob_sha": "c21cebd2148cf7c37429e6f909073d9b551bf38f",
+        "sha256": "6c14988554f1b842096dbb0815e2750b929abccbf48977c77e6d205e5b1d5903",
+        "line_count": 462,
+        "definition_lines": [
+          38,
+          41,
+          61,
+          67
+        ],
+        "theorem_lines": [
+          449,
+          453
+        ],
+        "domain": "NodeConfiguration n has Fin n → ℝ nodes in [-1,1]; objective is over [-1,1].",
+        "unchanged_from_previously_audited_plby_blob": true
+      }
+    }
+  },
+  "prior_real_interval_source": {
+    "repository": "randyxian08/jsp000936-lean",
+    "main_commit": "2535658804b579cbcaeae11a205648ab88eef572",
+    "commit_date": "2026-09-23T10:59:29Z",
+    "main_retrieved_at_utc": "2026-10-10T18:33:20.803312Z",
+    "commit_url": "https://github.com/randyxian08/jsp000936-lean/commit/2535658804b579cbcaeae11a205648ab88eef572",
+    "scope": "当前 main 仍明确排除复数单位圆附问；实际竞争对象和目标仍为实区间。",
+    "independent_primary_source_reads": [
+      {
+        "path": "README.md",
+        "commit": "2535658804b579cbcaeae11a205648ab88eef572",
+        "url": "https://github.com/randyxian08/jsp000936-lean/blob/2535658804b579cbcaeae11a205648ab88eef572/README.md",
+        "retrieved_at_utc": "2026-10-10T18:36:26.066121+00:00",
+        "blob_sha": "2d0d837882bcc11a0bc622ec56ec04589f90bdca",
+        "scope_lines": [
+          {
+            "line": 27,
+            "text": "unit-circle variant discussed in the bibliography is outside this submission."
+          }
+        ]
+      },
+      {
+        "path": "Erdos1153/Statement.lean",
+        "commit": "2535658804b579cbcaeae11a205648ab88eef572",
+        "url": "https://github.com/randyxian08/jsp000936-lean/blob/2535658804b579cbcaeae11a205648ab88eef572/Erdos1153/Statement.lean",
+        "retrieved_at_utc": "2026-10-10T18:36:26.370105+00:00",
+        "blob_sha": "e7c006e9a930732cf1de8ee62792888123a2a45d",
+        "scope_lines": [
+          {
+            "line": 27,
+            "text": "/-- An injectively enumerated family of exactly `n` nodes in `[-1, 1]`. -/"
+          },
+          {
+            "line": 28,
+            "text": "structure NodeFamily (n : ℕ) where"
+          },
+          {
+            "line": 29,
+            "text": "  point : Fin n → ℝ"
+          },
+          {
+            "line": 30,
+            "text": "  injective : Function.Injective point"
+          },
+          {
+            "line": 31,
+            "text": "  mem_Icc : ∀ i, point i ∈ Set.Icc (-1 : ℝ) 1"
+          },
+          {
+            "line": 32,
+            "text": ""
+          },
+          {
+            "line": 33,
+            "text": "/-- The `k`th Lagrange fundamental polynomial for `nodes`. -/"
+          },
+          {
+            "line": 34,
+            "text": "def lagrangeBasis {n : ℕ} (nodes : NodeFamily n) (k : Fin n) : ℝ[X] :="
+          },
+          {
+            "line": 35,
+            "text": "  Lagrange.basis Finset.univ nodes.point k"
+          },
+          {
+            "line": 36,
+            "text": ""
+          }
+        ]
+      },
+      {
+        "path": "Erdos1153/JSPInterpolation/Definitions.lean",
+        "commit": "2535658804b579cbcaeae11a205648ab88eef572",
+        "url": "https://github.com/randyxian08/jsp000936-lean/blob/2535658804b579cbcaeae11a205648ab88eef572/Erdos1153/JSPInterpolation/Definitions.lean",
+        "retrieved_at_utc": "2026-10-10T18:36:26.066311+00:00",
+        "blob_sha": "69369276a2b9c7d250e0c7e9b73b314a3a79075a",
+        "scope_lines": [
+          {
+            "line": 21,
+            "text": "/-! ## Literal objectives and an unrestricted competitor type -/"
+          },
+          {
+            "line": 22,
+            "text": ""
+          },
+          {
+            "line": 23,
+            "text": "/-- The actual maximum of the Lebesgue function on the AMBIENT interval. -/"
+          },
+          {
+            "line": 24,
+            "text": "def amplification {n : ℕ} (nodes : NodeFamily n) : ℝ :="
+          },
+          {
+            "line": 25,
+            "text": "  lebesgueOn nodes (-1) 1"
+          },
+          {
+            "line": 26,
+            "text": ""
+          },
+          {
+            "line": 27,
+            "text": "/-- The actual minimum of the finitely many adjacent-gap maxima."
+          },
+          {
+            "line": 28,
+            "text": "The type `Fin (d+1)` is nonempty, including the two-node case `d=0`. -/"
+          },
+          {
+            "line": 68,
+            "text": "def Target936 : Prop :="
+          },
+          {
+            "line": 69,
+            "text": "  (∀ nodes : NodeFamily 1, IsMinimizer nodes) ∧"
+          },
+          {
+            "line": 70,
+            "text": "  ∀ d : ℕ, ∃ reference : NodeFamily (d + 2),"
+          },
+          {
+            "line": 71,
+            "text": "    IsNormalizedEquioscillating reference ∧"
+          },
+          {
+            "line": 72,
+            "text": "    IsMinimizer reference ∧"
+          },
+          {
+            "line": 73,
+            "text": "    ∀ nodes : NodeFamily (d + 2),"
+          },
+          {
+            "line": 74,
+            "text": "      amplification reference ≤ amplification nodes ∧"
+          },
+          {
+            "line": 75,
+            "text": "      (IsMinimizer nodes ↔"
+          },
+          {
+            "line": 76,
+            "text": "        AdmissibleAffineCopy reference nodes ∧"
+          },
+          {
+            "line": 77,
+            "text": "        lebesgueFunction nodes (-1) ≤ amplification reference ∧"
+          },
+          {
+            "line": 78,
+            "text": "        lebesgueFunction nodes 1 ≤ amplification reference)"
+          },
+          {
+            "line": 79,
+            "text": ""
+          }
+        ]
+      }
+    ]
+  },
+  "bounded_circle_code_searches": [
+    {
+      "query": "\"unit circle\" \"interpolation\" language:Lean",
+      "retrieved_at_utc": "2026-10-10T18:34:44.919932+00:00",
+      "total_count": 7,
+      "incomplete_results": false,
+      "query_api_url": "https://api.github.com/search/code?q=%22unit%20circle%22%20%22interpolation%22%20language%3ALean&per_page=100"
+    },
+    {
+      "query": "\"Brutman\" language:Lean",
+      "retrieved_at_utc": "2026-10-10T18:34:43.260196+00:00",
+      "total_count": 0,
+      "incomplete_results": false,
+      "query_api_url": "https://api.github.com/search/code?q=%22Brutman%22%20language%3ALean&per_page=100"
+    },
+    {
+      "query": "\"Erdos1129\" \"Circle\" language:Lean",
+      "retrieved_at_utc": "2026-10-10T18:34:43.142630+00:00",
+      "total_count": 0,
+      "incomplete_results": false,
+      "query_api_url": "https://api.github.com/search/code?q=%22Erdos1129%22%20%22Circle%22%20language%3ALean&per_page=100"
+    }
+  ],
+  "current_code_hits_review": [
+    {
+      "repository": "google-deepmind/formal-conjectures",
+      "path": "FormalConjectures/ErdosProblems/230.lean",
+      "blob_sha": "cda1286c3bacbdf1d4c3a4b3a48d0fc877426347",
+      "commit": "1646ca16afd6cc7a693d3bdc9f066c4d3cc01a89",
+      "url": "https://github.com/google-deepmind/formal-conjectures/blob/1646ca16afd6cc7a693d3bdc9f066c4d3cc01a89/FormalConjectures/ErdosProblems/230.lean",
+      "retrieved_at_utc": "2026-10-10T18:35:36.806655+00:00",
+      "sha256": "9d36dfbd7fe0e061fe5537416e42c28a8d91c8127ea7534167953e9debb7e106",
+      "size": 4073,
+      "line_count": 91,
+      "scope_lines": [
+        {
+          "line": 29,
+          "text": "- [Er80h] Erdős, P., *Problems and results on polynomials and interpolation*. (1980), 383--391."
+        },
+        {
+          "line": 41,
+          "text": "namespace Erdos230"
+        },
+        {
+          "line": 43,
+          "text": "/-- The maximum of $\\lvert P(z)\\rvert$ over the unit circle, for"
+        },
+        {
+          "line": 76,
+          "text": "theorem erdos_230 : answer(False) ↔ ∃ c : ℝ, 0 < c ∧ ∀ n : ℕ, 2 ≤ n →"
+        },
+        {
+          "line": 86,
+          "text": "theorem erdos_230.variants.ultraflat : ∃ a : (n : ℕ) → Fin n → ℂ, (∀ n k, ‖a n k‖ = 1) ∧"
+        }
+      ],
+      "literal_node_interpolation_identifiers_found": [],
+      "classification": "Erdos230 polynomial maximum modulus and ultraflat polynomials"
+    },
+    {
+      "repository": "roos-j/lean-spherical",
+      "path": "LeanSpherical/Auto/SteinInterpolation.lean",
+      "blob_sha": "355d54903cfb65ad42d3b7414477f659b43f0cfa",
+      "commit": "2b0e2bbf35cdf45ab99d1d77b2dea37b214fe236",
+      "url": "https://github.com/roos-j/lean-spherical/blob/2b0e2bbf35cdf45ab99d1d77b2dea37b214fe236/LeanSpherical/Auto/SteinInterpolation.lean",
+      "retrieved_at_utc": "2026-10-10T18:35:37.017477+00:00",
+      "sha256": "3aefe3704057ce1d8e840513a5fc6a2163f63a290c0c3d53ed60fbf2848cbb81",
+      "size": 354076,
+      "line_count": 7426,
+      "scope_lines": [
+        {
+          "line": 79,
+          "text": "# Stein interpolation"
+        },
+        {
+          "line": 81,
+          "text": "This file formalizes Stein's interpolation theorem for analytic families of operators on the"
+        },
+        {
+          "line": 86,
+          "text": "* E. M. Stein, *Interpolation of linear operators*, Transactions of the American Mathematical"
+        },
+        {
+          "line": 93,
+          "text": "namespace Auto.SteinInterpolation"
+        },
+        {
+          "line": 2635,
+          "text": "/-- The standard strict radial sequence used to approach the unit circle. -/"
+        },
+        {
+          "line": 4160,
+          "text": "/-- The final duality assembly for interpolation: a scalar pairing estimate with the two"
+        }
+      ],
+      "literal_node_interpolation_identifiers_found": [],
+      "classification": "Analytic interpolation of operator families"
+    },
+    {
+      "repository": "LeanPool/lean-pool",
+      "path": "LeanPool/HopfProblem/PeriodFamily/Core7.lean",
+      "blob_sha": "05623f04b11f01491945a411c5f134dcc63174cf",
+      "commit": "766a994003f161b1013109977cd615b06d0dd5a9",
+      "url": "https://github.com/LeanPool/lean-pool/blob/766a994003f161b1013109977cd615b06d0dd5a9/LeanPool/HopfProblem/PeriodFamily/Core7.lean",
+      "retrieved_at_utc": "2026-10-10T18:35:36.875045+00:00",
+      "sha256": "765ea1d37132d27473db11a9c2665498ba3ec0a4db97c2f4ac0be910d869fdd1",
+      "size": 59984,
+      "line_count": 1142,
+      "scope_lines": [
+        {
+          "line": 8,
+          "text": "public import LeanPool.HopfProblem.Prelude"
+        },
+        {
+          "line": 9,
+          "text": "public import LeanPool.HopfProblem.PeriodFamily.Core6"
+        },
+        {
+          "line": 10,
+          "text": "public import LeanPool.HopfProblem.MainTheorem.Core1"
+        },
+        {
+          "line": 11,
+          "text": "import all LeanPool.HopfProblem.Foundations.Core1"
+        },
+        {
+          "line": 12,
+          "text": "import all LeanPool.HopfProblem.HomologyTheory.SingularMayerVietoris"
+        },
+        {
+          "line": 13,
+          "text": "import all LeanPool.HopfProblem.Lattice.Core1"
+        }
+      ],
+      "literal_node_interpolation_identifiers_found": [],
+      "classification": "Hopf problem, period families and torus homology"
+    },
+    {
+      "repository": "CBirkbeck/AINTLIB",
+      "path": "projects/PadicLFunctions/PadicLFunctions/ValuesAtOneComplex.lean",
+      "blob_sha": "002fc4bb720aeeb32515eff2bc6c719d72dcedfe",
+      "commit": "748615e36e40ea0bfe3d50c9f7d8f2b968dfa3c2",
+      "url": "https://github.com/CBirkbeck/AINTLIB/blob/748615e36e40ea0bfe3d50c9f7d8f2b968dfa3c2/projects/PadicLFunctions/PadicLFunctions/ValuesAtOneComplex.lean",
+      "retrieved_at_utc": "2026-10-10T18:35:37.000014+00:00",
+      "sha256": "468bee1c14f068f06241d57464f8124a2bbcf3720ea5ef26d177d071a7f855cc",
+      "size": 24609,
+      "line_count": 474,
+      "scope_lines": [
+        {
+          "line": 8,
+          "text": "public import PadicLFunctions.Interpolation.GenBernoulliComplex"
+        },
+        {
+          "line": 9,
+          "text": "public import PadicLFunctions.Interpolation.Characters"
+        },
+        {
+          "line": 19,
+          "text": "mathlib's `DirichletCharacter.LFunction` per the mathlib-linking directive."
+        },
+        {
+          "line": 26,
+          "text": "open Complex DirichletCharacter"
+        },
+        {
+          "line": 28,
+          "text": "namespace PadicLFunctions"
+        },
+        {
+          "line": 30,
+          "text": "namespace ValuesAtOneComplex"
+        }
+      ],
+      "literal_node_interpolation_identifiers_found": [],
+      "classification": "Dirichlet characters and L-functions"
+    },
+    {
+      "repository": "Arthur742Ramos/presentation-complex-lean",
+      "path": "PresentationPackage/Proof2.lean",
+      "blob_sha": "776ddbbb77e34d1947f6501ebc2108e30aec9bff",
+      "commit": "aa11639b7f616a7b3e688c6261c94f59b15167dc",
+      "url": "https://github.com/Arthur742Ramos/presentation-complex-lean/blob/aa11639b7f616a7b3e688c6261c94f59b15167dc/PresentationPackage/Proof2.lean",
+      "retrieved_at_utc": "2026-10-10T18:35:39.983544+00:00",
+      "sha256": "ec590d4f90d8cd001c4a2b5e6ea3db0d16d504081727a3a4578c8a430dede468",
+      "size": 343773,
+      "line_count": 7959,
+      "scope_lines": [
+        {
+          "line": 2,
+          "text": "Arbitrary presentation complexes and the genuine Hausdorff CW realization of every group."
+        },
+        {
+          "line": 227,
+          "text": "public import PresentationPackage.Proof1"
+        },
+        {
+          "line": 247,
+          "text": "structure dTopCat where"
+        },
+        {
+          "line": 255,
+          "text": "namespace dTopCat"
+        },
+        {
+          "line": 427,
+          "text": "namespace SplitPath"
+        },
+        {
+          "line": 592,
+          "text": "namespace SplitDipath"
+        }
+      ],
+      "literal_node_interpolation_identifiers_found": [],
+      "classification": "Group presentation complexes and Hausdorff CW realization"
+    },
+    {
+      "repository": "roos-j/lean-spherical",
+      "path": "LeanSpherical/Auto/Spherical/MSS/LocalSmoothing.lean",
+      "blob_sha": "dd1ad0debe361e2f08ff5203221688126d1ec41d",
+      "commit": "2b0e2bbf35cdf45ab99d1d77b2dea37b214fe236",
+      "url": "https://github.com/roos-j/lean-spherical/blob/2b0e2bbf35cdf45ab99d1d77b2dea37b214fe236/LeanSpherical/Auto/Spherical/MSS/LocalSmoothing.lean",
+      "retrieved_at_utc": "2026-10-10T18:35:38.239020+00:00",
+      "sha256": "c106b9006a7fd19138572ef492307c8acf94a7b16c7d0789cd37736b384b9484",
+      "size": 296555,
+      "line_count": 6302,
+      "scope_lines": [
+        {
+          "line": 41,
+          "text": "namespace Auto.Spherical.MSS"
+        },
+        {
+          "line": 493,
+          "text": "structure MSSWavefrontGammaFamily (core : MSSWavefrontCutoffData) where"
+        },
+        {
+          "line": 504,
+          "text": "structure MSSStructuredRecombinationData (D : MSSWavefrontKernelData) where"
+        },
+        {
+          "line": 1780,
+          "text": "theorem mssRecombination_of_structuredData"
+        },
+        {
+          "line": 2053,
+          "text": "theorem mssConicL4Estimate_of_structuredData"
+        },
+        {
+          "line": 2154,
+          "text": "structure MSSStructuredConicDatum where"
+        }
+      ],
+      "literal_node_interpolation_identifiers_found": [],
+      "classification": "Wavefront kernels and local smoothing"
+    },
+    {
+      "repository": "competemath/emissary-archangel",
+      "path": "data/exports/lean-pool/LeanPool.HopfProblem.PeriodFamily.Core7.expanded.lean",
+      "blob_sha": "e35e43d7beceabc19262954812ff31b8faeb8caa",
+      "commit": "3c095dff9b1dd86d51a923d5144015a23128feed",
+      "url": "https://github.com/competemath/emissary-archangel/blob/3c095dff9b1dd86d51a923d5144015a23128feed/data/exports/lean-pool/LeanPool.HopfProblem.PeriodFamily.Core7.expanded.lean",
+      "retrieved_at_utc": "2026-10-10T18:35:38.086181+00:00",
+      "sha256": "0de611120d76a032a9747757b2e62f7b95c3a290d83df82ceb851f55bc27b797",
+      "size": 62363,
+      "line_count": 1332,
+      "scope_lines": [
+        {
+          "line": 8,
+          "text": "public import LeanPool.HopfProblem.Prelude"
+        },
+        {
+          "line": 9,
+          "text": "public import LeanPool.HopfProblem.PeriodFamily.Core6"
+        },
+        {
+          "line": 10,
+          "text": "public import LeanPool.HopfProblem.MainTheorem.Core1"
+        },
+        {
+          "line": 11,
+          "text": "import all LeanPool.HopfProblem.Foundations.Core1"
+        },
+        {
+          "line": 12,
+          "text": "import all LeanPool.HopfProblem.HomologyTheory.SingularMayerVietoris"
+        },
+        {
+          "line": 13,
+          "text": "import all LeanPool.HopfProblem.Lattice.Core1"
+        }
+      ],
+      "literal_node_interpolation_identifiers_found": [],
+      "classification": "Hopf problem, period families and torus homology"
+    }
+  ],
+  "conclusions": {
+    "catalog_verified": "官方目录未改变：Solved、Lean proof No、Eligible to claim No。",
+    "latest_pr_scope": "最新 open PR 4987 的实际固定源码只覆盖三节点实区间结果，不能作为全单位圆分类的重复证明。",
+    "prior_full_real_scope": "先前 randy 的全实区间证明仍明确排除单位圆版本。",
+    "bounded_duplicate_result": "本次已检查的 PR 引用源码和7个当前代码检索命中未提供实际全单位圆最小值分类；未发现可核对的新增完整单位圆形式化。",
+    "organizer_acceptance": "未知：主办方是否接受单位圆附问作为 JSP-000936 的单独完整形式化贡献。",
+    "exclusive_or_priority_claim": "未确立。搜索范围和索引有限，不能证明其他仓库、分支、私人工作或未索引提交不存在。",
+    "award_outcome": "未知；本地完整 Lean 证明及标准公理审计不等于获奖或主办方接受。"
+  }
+}

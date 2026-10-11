@@ -1,0 +1,7 @@
+.lake/
+.tools/
+.work/
+*.olean
+*.ilean
+*.c
+*.o

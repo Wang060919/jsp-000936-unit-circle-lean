@@ -1,0 +1,9 @@
+OriginalUnitCircleStatement.original_classification (n : ℕ) (hn : 0 < n) (z : Fin n → ℂ)
+  (hunit : ∀ (i : Fin n), ‖z i‖ = 1) (hinj : Function.Injective z) : literalMinimizer z ↔ literalRegular z
+OriginalUnitCircleStatement.original_lower_bound (n : ℕ) (hn : 0 < n) (z : Fin n → ℂ) (hunit : ∀ (i : Fin n), ‖z i‖ = 1)
+  (hinj : Function.Injective z) : literalMaximum (regularCoordinates n) ≤ literalMaximum z
+'OriginalUnitCircleStatement.literalMaximum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OriginalUnitCircleStatement.literalMinimizer_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OriginalUnitCircleStatement.literalRegular_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OriginalUnitCircleStatement.original_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OriginalUnitCircleStatement.original_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
